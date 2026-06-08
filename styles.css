@@ -316,6 +316,7 @@ p {
 .how-it-works,
 .example-section,
 .waitlist,
+.audience,
 .benefits,
 .boundaries,
 .guidance,
@@ -345,6 +346,56 @@ p {
 
 .problem {
   border-top: 1px solid var(--line);
+}
+
+.proof-section {
+  padding-top: 70px;
+  border-top: 1px solid var(--line);
+}
+
+.audience {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 80px;
+  align-items: start;
+  border-top: 1px solid var(--line);
+}
+
+.audience .section-intro {
+  margin-bottom: 0;
+}
+
+.audience-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.audience-list li {
+  position: relative;
+  padding: 19px 22px 19px 55px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-medium);
+  background: rgba(255, 253, 248, 0.62);
+  font-weight: 650;
+}
+
+.audience-list li::before {
+  position: absolute;
+  top: 18px;
+  left: 21px;
+  display: grid;
+  width: 23px;
+  height: 23px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--sage-deep);
+  background: var(--sage);
+  content: "✓";
+  font-size: 0.7rem;
+  font-weight: 800;
 }
 
 .problem-grid {
@@ -916,6 +967,7 @@ p {
   .features,
   .example-section,
   .waitlist,
+  .audience,
   .boundary-card,
   .guidance,
   .testing {
@@ -975,6 +1027,7 @@ p {
   .how-it-works,
   .example-section,
   .waitlist,
+  .audience,
   .benefits,
   .boundaries,
   .guidance,
