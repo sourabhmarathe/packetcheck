@@ -317,11 +317,8 @@ p {
 .example-section,
 .waitlist,
 .audience,
-.benefits,
 .boundaries,
-.guidance,
-.testing,
-.early-concept {
+.guidance {
   padding-block: 110px;
 }
 
@@ -747,45 +744,6 @@ p {
   background: var(--blue-soft);
 }
 
-.benefits {
-  border-top: 1px solid var(--line);
-}
-
-.benefit-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
-}
-
-.benefit-grid article {
-  padding: 28px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-medium);
-  background: var(--paper);
-}
-
-.benefit-grid article > span {
-  display: grid;
-  width: 35px;
-  height: 35px;
-  margin-bottom: 38px;
-  place-items: center;
-  border-radius: 10px;
-  color: var(--sage-deep);
-  background: var(--sage);
-  font-weight: 800;
-}
-
-.benefit-grid h3 {
-  margin-bottom: 10px;
-  font-size: 1.08rem;
-}
-
-.benefit-grid p {
-  margin-bottom: 0;
-  font-size: 0.87rem;
-}
-
 .boundary-card {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -837,62 +795,6 @@ p {
 .guidance > p {
   max-width: 680px;
   font-size: 1.08rem;
-}
-
-.testing {
-  display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 80px;
-  align-items: start;
-  border-top: 1px solid var(--line);
-}
-
-.testing .section-intro {
-  margin-bottom: 0;
-}
-
-.testing-list {
-  display: grid;
-  gap: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.testing-list li {
-  position: relative;
-  padding: 22px 24px 22px 58px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-medium);
-  background: rgba(255, 253, 248, 0.62);
-  font-weight: 650;
-}
-
-.testing-list li::before {
-  position: absolute;
-  top: 20px;
-  left: 22px;
-  display: grid;
-  width: 24px;
-  height: 24px;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--sage-deep);
-  background: var(--sage);
-  content: "?";
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.early-concept {
-  max-width: 800px;
-  text-align: center;
-}
-
-.early-concept p:last-child {
-  max-width: 660px;
-  margin: 0 auto;
-  font-size: 1.12rem;
 }
 
 .final-cta {
@@ -952,8 +854,7 @@ p {
   }
 
   .problem-grid,
-  .steps,
-  .benefit-grid {
+  .steps {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -969,8 +870,7 @@ p {
   .waitlist,
   .audience,
   .boundary-card,
-  .guidance,
-  .testing {
+  .guidance {
     grid-template-columns: 1fr;
     gap: 45px;
   }
@@ -979,9 +879,6 @@ p {
     max-width: 680px;
   }
 
-  .benefit-grid article:last-child {
-    grid-column: auto;
-  }
 }
 
 @media (max-width: 640px) {
@@ -1028,11 +925,8 @@ p {
   .example-section,
   .waitlist,
   .audience,
-  .benefits,
   .boundaries,
-  .guidance,
-  .testing,
-  .early-concept {
+  .guidance {
     padding-block: 78px;
   }
 
@@ -1042,8 +936,7 @@ p {
 
   .problem-grid,
   .steps,
-  .feature-list,
-  .benefit-grid {
+  .feature-list {
     grid-template-columns: 1fr;
   }
 
@@ -1103,10 +996,6 @@ p {
 
   .waitlist-form .button {
     width: 100%;
-  }
-
-  .testing-list li {
-    padding: 20px 20px 20px 54px;
   }
 
   .final-cta {
