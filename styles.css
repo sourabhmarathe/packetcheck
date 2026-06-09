@@ -635,7 +635,7 @@ p {
   font-size: 1.04rem;
 }
 
-.waitlist-form {
+.waitlist-card {
   display: grid;
   gap: 22px;
   padding: clamp(28px, 5vw, 48px);
@@ -645,50 +645,13 @@ p {
   box-shadow: var(--shadow);
 }
 
-.form-field {
-  display: grid;
-  gap: 8px;
+.waitlist-card h3,
+.waitlist-card > p {
+  margin-bottom: 0;
 }
 
-.form-field label {
-  color: var(--ink);
-  font-size: 0.88rem;
-  font-weight: 750;
-}
-
-.form-field label span {
-  color: var(--ink-soft);
-  font-size: 0.76rem;
-  font-weight: 500;
-}
-
-.form-field input,
-.form-field select,
-.form-field textarea {
-  width: 100%;
-  min-height: 50px;
-  padding: 12px 14px;
-  border: 1px solid #c9d2cc;
-  border-radius: 10px;
-  color: var(--ink);
-  background: var(--white);
-  font: inherit;
-}
-
-.form-field textarea {
-  min-height: 112px;
-  resize: vertical;
-}
-
-.form-field input:focus,
-.form-field select:focus,
-.form-field textarea:focus {
-  border-color: var(--sage-deep);
-  outline: 3px solid rgba(46, 106, 80, 0.14);
-}
-
-.form-field textarea::placeholder {
-  color: #77898c;
+.waitlist-card > p:not(.privacy-notice) {
+  max-width: 570px;
 }
 
 .privacy-notice {
@@ -705,11 +668,9 @@ p {
   color: #59471f;
 }
 
-.waitlist-form .button {
+.waitlist-card .button {
   width: fit-content;
-  border: 0;
-  cursor: pointer;
-  font: inherit;
+  gap: 9px;
 }
 
 .label {
@@ -990,11 +951,11 @@ p {
     padding: 36px 26px;
   }
 
-  .waitlist-form {
+  .waitlist-card {
     padding: 26px 20px;
   }
 
-  .waitlist-form .button {
+  .waitlist-card .button {
     width: 100%;
   }
 

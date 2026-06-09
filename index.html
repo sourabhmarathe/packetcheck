@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#163f46">
   <title>PacketCheck | A clearer mortgage document checklist</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -115,33 +115,12 @@
         <p>PacketCheck is an early concept. Join the list if you want a simpler way to organize mortgage document requests.</p>
       </div>
 
-      <!-- Replace this placeholder URL with a real form provider endpoint before publishing. -->
-      <form class="waitlist-form" action="https://example.com/waitlist-form-endpoint" method="post">
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-        </div>
-
-        <div class="form-field">
-          <label for="borrower-situation">Which best describes you?</label>
-          <select id="borrower-situation" name="borrower_situation" required>
-            <option value="" selected disabled>Select one</option>
-            <option value="applying-now">I am applying for a mortgage now</option>
-            <option value="applying-soon">I expect to apply soon</option>
-            <option value="first-time-homebuyer">I am a first-time homebuyer</option>
-            <option value="work-with-borrowers">I work with borrowers</option>
-          </select>
-        </div>
-
-        <div class="form-field">
-          <label for="document-problem">What is confusing or stressful about your mortgage document request? <span>Optional</span></label>
-          <textarea id="document-problem" name="document_problem" rows="4" placeholder="For example: I am not sure whether my bank statements are complete."></textarea>
-        </div>
-
+      <div class="waitlist-card">
+        <h3>Join the early-access list</h3>
+        <p>The short form asks for your email, where you are in the mortgage process, and what feels confusing about document requests.</p>
         <p class="privacy-notice"><strong>This is an early-access form, not a secure document upload.</strong> Do not submit mortgage documents, Social Security numbers, bank account numbers, or other sensitive financial information through this form.</p>
-
-        <button class="button button-primary" type="submit">Join early access</button>
-      </form>
+        <a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSejIuU0xLjXliyPHCOVad63GSdmgqlkq8OfzVJGLiz_7ZNNUg/viewform?usp=publish-editor" target="_blank" rel="noopener">Join early access <span aria-hidden="true">↗</span></a>
+      </div>
     </section>
 
     <section class="audience section-shell">
